@@ -1,6 +1,14 @@
 
 export const Slider = () => {
   return (
-        <div>HomeSlider</div>
+        <div>
+          {/*
+            o	Participa (consultas, presupuestos participativos, propuestas).
+            o	Transparencia.
+            o	Geovisor.
+            o	Eventos.       
+          */}
+          HomeSlider
+         </div>
   )
 }

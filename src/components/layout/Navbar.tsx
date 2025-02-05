@@ -6,15 +6,15 @@ export const Navbar = () => {
     <div className="hidden lg:flex space-x-4">
       {NavItems.map((item, index) => {
         return (
-          <Link to={item.route}>
+          <Link to={item.children[0].route}>
             <button
               key={index}
-              className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200"
+              className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200 w-24 h-24"
             >
-              <div className="bg-white/10 p-2 rounded-lg mb-1">
-                {<item.icon />}
-              </div>
-              <span className="text-xs text-center ">{item.title}</span>
+              <div>{<item.icon />}</div>
+              <span className="text-xs text-center break-words w-full">
+                {item.title}
+              </span>
             </button>
           </Link>
         );

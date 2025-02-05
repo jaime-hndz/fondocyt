@@ -9,7 +9,6 @@ import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/Participaci
 import { ParticipacionComunitariaScreen } from "@/screens/public/tools/ParticipacionComunitariaScreen";
 import { ServiciosScreen } from "@/screens/public/tools/ServiciosScreen";
 import { TransparenciaScreen } from "@/screens/public/tools/TransparenciaScreen";
-import { UsuarioScreen } from "@/screens/public/tools/UsuarioScreen";
 import {
   Map,
   Terrain,
@@ -22,81 +21,119 @@ import {
   Event,
   AddModerator,
   ContactSupport,
-  Person,
 } from "@mui/icons-material";
 
 export const NavItems = [
   {
     icon: Terrain,
     title: "Ordenamiento Territorial",
-    route: "ordenamiento_territorial",
-    element: OrdenamientoTerritorialScreen,
+    children: [
+      {
+        icon: Terrain,
+        title: "Ordenamiento Territorial",
+        route: "ordenamiento_territorial",
+        element: OrdenamientoTerritorialScreen,
+          
+      },
+
+    ]
   },
   {
     icon: Map,
     title: "Geovisor",
-    route: "geovisor",
-    element: GeovisorScreen,
+    children: [
+      {
+        icon: Map,
+        title: "Geovisor",
+        route: "geovisor",
+        element: GeovisorScreen,
+      }
+    ]
   },
 
   {
     icon: Info,
-    title: "Información General BDH",
-    route: "info_bdh",
-    element: InfoBDHScreen,
+    title: "Información General",
+    children: [
+      {
+        icon: Info,
+        title: "Información Bajos de Haina",
+        route: "info_bdh",
+        element: InfoBDHScreen,
+      },
+      {
+        icon: Gavel,
+        title: "Normativa",
+        route: "normativa",
+        element: NormativaScreen,
+      },
+      {
+        icon: MedicalInformation,
+        title: "Servicios",
+        route: "servicios",
+        element: ServiciosScreen,
+      },
+      {
+        icon: Event,
+        title: "Eventos",
+        route: "eventos",
+        element: EventosScreen,
+      },
+    ]
   },
   {
     icon: NotificationImportant,
     title: "Gestión de Riesgos",
-    route: "gestion_riesgos",
-    element: GestionRiesgosScreen,
-  },
-  {
-    icon: Gavel,
-    title: "Normativa",
-    route: "normativa",
-    element: NormativaScreen,
-  },
-  {
-    icon: MedicalInformation,
-    title: "Servicios",
-    route: "servicios",
-    element: ServiciosScreen,
+    children: [
+      {
+        icon: NotificationImportant,
+        title: "Gestión de Riesgos",
+        route: "gestion_riesgos",
+        element: GestionRiesgosScreen,
+      },
+    ]
   },
   {
     icon: People,
-    title: "Participación Ciudadana",
-    route: "participacion_ciudadana",
-    element: ParticipacionCiudadanaScreen,
+    title: "Participación ",
+    children: [
+      {
+        icon: People,
+        title: "Participación Ciudadana",
+        route: "participacion_ciudadana",
+        element: ParticipacionCiudadanaScreen,
+      },
+      {
+        icon: HomeWork,
+        title: "Participación Comunitaria",
+        route: "participacion_comunitaria",
+        element: ParticipacionComunitariaScreen,
+      },
+    ]
   },
-  {
-    icon: HomeWork,
-    title: "Participación Comunitaria",
-    route: "participacion_comunitaria",
-    element: ParticipacionComunitariaScreen,
-  },
-  {
-    icon: Event,
-    title: "Eventos",
-    route: "eventos",
-    element: EventosScreen,
-  },
+
   {
     icon: AddModerator,
     title: "Transparencia",
-    route: "transparencia",
-    element: TransparenciaScreen,
-  },
-  {
-    icon: Person,
-    title: "Usuario",
-    route: "usuario",
-    element: UsuarioScreen,
+    children: [
+      {
+        icon: AddModerator,
+        title: "Transparencia",
+        route: "transparencia",
+        element: TransparenciaScreen,
+      },
+    ]
   },
   {
     icon: ContactSupport,
     title: "Contacto",
-    route: "contacto",
-    element: ContactoScreen,
+    children: [
+      {
+        icon: ContactSupport,
+        title: "Contacto",
+        route: "contacto",
+        element: ContactoScreen,
+      },
+    ]
   },
 ];
