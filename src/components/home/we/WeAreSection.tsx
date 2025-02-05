@@ -5,8 +5,10 @@ import { WeAre } from './WeAre'
 export const WeAreSection = () => {
   return (
     <PageSection>
-        <WeAre />
-        <Sponsors />
+        <div className='flex flex-col gap-10'>
+          <WeAre />
+          <Sponsors />
+        </div>
     </PageSection>
     
   )
