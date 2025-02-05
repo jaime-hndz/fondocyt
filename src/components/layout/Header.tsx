@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import Cookies from "universal-cookie";
 import { Link } from "react-router";
 import { usuario } from "../../helpers/cookies/UserProvider";
-import {AccessibilityNewOutlined, Map, DirectionsBoat, Festival} from '@mui/icons-material';
+import { Navbar } from "./Navbar";
 const cookies = new Cookies();
 
 export const Header = () => {
@@ -11,13 +11,6 @@ export const Header = () => {
     cookies.remove("user", { path: "/" });
     window.location.reload();
   };
-
-  const menuItems = [
-    { icon: < Map />, label: "Herramienta 1", link: "herramienta1" },
-    { icon: < AccessibilityNewOutlined />, label: "Herramienta 2", link: "herramienta2" },
-    { icon: < DirectionsBoat />, label: "Herramienta 3", link: "herramienta3" },
-    { icon: < Festival />, label: "Herramienta 4", link: "herramienta4", restricted: true },
-  ];
 
   return (
     <>
@@ -31,30 +24,7 @@ export const Header = () => {
             </div>
             </Link>
 
-            {/* Navigation Items */}
-            <div className="hidden lg:flex space-x-4">
-              {menuItems.map((item, index) => {
-
-                if(item.restricted && !usuario)
-                    return null
-
-                return (
-                    <Link to={item.link}>
-                      <button
-                        key={index}
-                        className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200"
-                      >
-                        <div className="bg-white/10 p-2 rounded-lg mb-1">
-                          {item.icon}
-                        </div>
-                        <span className="text-xs text-center whitespace-nowrap">
-                          {item.label}
-                        </span>
-                      </button>
-                    </Link>
-                  )
-              })}
-            </div>
+            <Navbar />
 
             {usuario ? (
           <Button
