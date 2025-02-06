@@ -5,7 +5,7 @@ import { UserMenu } from "./UserMenu";
 export const Header = () => {
   return (
     <>
-      <div className="w-full bg-blue-400 p-4">
+      <div className="w-full bg-blue-400 p-4 max-h-30">
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             <Link to='/'>

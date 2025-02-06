@@ -12,7 +12,7 @@ export const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <div className="page absolute size-full">
       <Header />
-      <div className="min-h-screen ">{children}</div>
+      <div>{children}</div>
       <Footer />
     </div>
   );

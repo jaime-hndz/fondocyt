@@ -26,7 +26,7 @@ export const UserMenu = () => {
     <div>
       <button
         onClick={handleClick}
-        className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200 w-24 h-24"
+        className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200 w-22 h-22"
       >
         <div>{<AccountCircle />}</div>
       </button>
