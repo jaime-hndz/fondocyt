@@ -1,29 +1,13 @@
+import { Link } from "react-router";
+
 export const FeaturedDocuments = () => {
   const documents = [
     {
       id: 1,
-      image: "/api/placeholder/280/180",
-      title: "Plan de Inversiones en Infraestructura de Movilidad y Espacio Público PIIMEP-STGO 2023-2033",
+      image: "src/assets/doc1.png",
+      title: "TU MUNICIPIO EN CIFRAS Bajos de Haina",
       alt: "Portada del Plan de Inversiones"
     },
-    {
-      id: 2,
-      image: "/api/placeholder/280/180",
-      title: "Plan de Salud Municipal",
-      alt: "Portada del Plan de Salud 2024"
-    },
-    {
-      id: 3,
-      image: "/api/placeholder/280/180",
-      title: "Plan Anual de Educación Municipal",
-      alt: "Portada del Plan Anual de Educación"
-    },
-    {
-      id: 4,
-      image: "/api/placeholder/280/180",
-      title: "Cuentas Públicas",
-      alt: "Portada de Cuentas Públicas"
-    }
   ];
 
   return (
@@ -32,11 +16,12 @@ export const FeaturedDocuments = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left side - Featured Documents */}
           <div>
-            <h2 className="text-4xl font-bold mb-8 text-red-500">
+            <h2 className="text-4xl font-bold mb-8">
               Destacamos
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {documents.map((doc) => (
+                <a href='src/assets/pdf/municipio-en-cifras-bajos-de-haina.pdf'>
                 <div 
                   key={doc.id} 
                   className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
@@ -54,6 +39,8 @@ export const FeaturedDocuments = () => {
                     </h3>
                   </div>
                 </div>
+                </a>
+
               ))}
             </div>
           </div>

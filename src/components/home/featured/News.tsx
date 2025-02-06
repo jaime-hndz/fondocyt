@@ -2,30 +2,30 @@ export const News = () => {
   const newsItems = [
     {
       id: 1,
-      image: "/api/placeholder/400/250",
-      title: "Análisis de la Cobertura Vegetacional en la Comuna de Santiago",
-      excerpt: "En el siguiente documento se presentan diversos resultados a partir de la aplicación metodológica ",
+      image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volupt", 
+      excerpt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusamus harum odio necessitatibus sed rerum  ",
       alt: "Vista aérea de Santiago mostrando cobertura vegetacional"
     },
     {
       id: 2,
-      image: "/api/placeholder/400/250",
-      title: "Cuaderno de Información Comunal",
-      excerpt: "A continuación se presentan datos para la comuna de Santiago, que tienen como fuente principal, los Censos...",
+      image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volupt",
+      excerpt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusamus harum odio necessitatibus sed rerum  ",
       alt: "Portada del cuaderno de información comunal"
     },
     {
       id: 3,
-      image: "/api/placeholder/400/250",
-      title: "Catálogo de parques, plazas y especies arbóreas de la comuna de Santiago",
-      excerpt: "A continuación se presentan 2 documentos elaborados recientemente por la Subdirección de Ornato, Parques y Jardines...",
+      image: "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+      title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volupt",
+      excerpt: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusamus harum odio necessitatibus sed rerum  ",
       alt: "Imagen de parque con árboles"
     }
   ];
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-4xl font-bold text-center mb-12 text-red-500">
+      <h2 className="text-4xl font-bold text-center mb-12">
         Noticias
       </h2>
 

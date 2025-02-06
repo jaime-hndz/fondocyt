@@ -1,4 +1,4 @@
-import analisis from '@/assets/img/analisis.svg';
+import analisis from "@/assets/img/analisis.svg";
 
 export const WeAre = () => {
   return (
@@ -22,40 +22,36 @@ export const WeAre = () => {
         {/* Right side - Text content */}
         <div className="lg:w-1/2 space-y-6 text-gray-700">
           <p className="leading-relaxed">
-            Observatorio de Santiago es una iniciativa desarrollada por la Ilustre Municipalidad 
-            de Santiago, pensada y diseñada como una plataforma que comunica y difunde 
-            contenidos de interés público que colaboran en la toma de decisiones tanto en los 
-            ámbitos de evaluación de políticas públicas locales, como en planificación de 
-            iniciativas que demanda la comunidad.
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean maecenas
+            morbi libero luctus velit. Dignissim fermentum congue ac platea
+            commodo elementum mus duis. Sagittis porttitor maecenas neque,
+            suscipit metus lacus et consequat. Mollis habitasse volutpat justo
+            in litora. Laoreet malesuada dui posuere fusce; diam nisi. Leo
+            viverra nam tempor inceptos nascetur iaculis sociosqu tortor. Proin
+            molestie nibh maximus risus enim magnis congue malesuada ultricies?
           </p>
 
           <p className="leading-relaxed">
-            Esta plataforma ha sido concebida bajo el principio de acceso universal, pensando en 
-            todos aquellos actores (sociales, económicos, culturales y académicos) que requieren 
-            información para el ejercicio de analizar y construir nuevos escenarios de desarrollo, 
-            en un contexto de permanente colaboración y corresponsabilidad.
+            Diam rutrum imperdiet tempus, morbi a massa mollis inceptos diam?
+            Vestibulum adipiscing mollis ac, odio sociosqu adipiscing odio. Eu
+            curabitur senectus, venenatis vulputate vehicula non etiam
+            consectetur sociosqu? Rhoncus neque elit turpis non sagittis diam
+            nullam sapien. Neque feugiat vehicula interdum mauris molestie
+            aenean dui sollicitudin scelerisque. Hac potenti pulvinar ultrices
+            felis lacinia inceptos dolor consequat?
           </p>
 
           <p className="leading-relaxed">
-            El fin último es y será asegurar mayor transparencia para el ejercicio libre y 
-            responsable del derecho a la información, tanto para vecinos y vecinas como también 
-            para investigadores que deseen conocer más sobre nuestra comuna y colaborar en el 
-            mejoramiento de las condiciones de vida.
-          </p>
-
-          <p className="leading-relaxed">
-            Durante el año 2021 presentamos una actualización del sitio Observatorio de 
-            Santiago, que contó en esa oportunidad con la colaboración de la Fundación Konrad 
-            Adenauer.
-          </p>
-
-          <p className="leading-relaxed">
-            Comenzando este año 2024, ponemos a disposición de la comunidad una 
-            actualización del Visor Interactivo Comunal que permitirá una mayor interacción para 
-            los usuarios de esta plataforma.
+            Bibendum semper finibus senectus eu nunc tempor parturient tortor
+            cras. Iaculis enim est habitasse bibendum conubia ultrices posuere
+            finibus? Diam lacinia lacus libero; senectus tempor primis finibus
+            convallis? Auctor bibendum penatibus torquent sollicitudin eget
+            mauris imperdiet. Odio lacinia porta euismod libero condimentum
+            aliquam et tincidunt. Tristique urna id mi litora consequat facilisi
+            leo.
           </p>
         </div>
       </div>
     </div>
   );
-}
+};
