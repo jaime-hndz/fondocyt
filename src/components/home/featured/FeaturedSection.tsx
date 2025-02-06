@@ -1,24 +1,15 @@
 import { PageSection } from "../../layout/PageSection";
-import { FeaturedDocuments } from "./FeaturedDocuments";
 import { CommunityIndicators } from "./CommunityIndicators";
+import { FeaturedDocuments } from "./FeaturedDocuments";
 import { News } from "./News";
 
 export const FeaturedSection = () => {
   return (
     <PageSection>
       <div className="flex flex-col gap-10">
-        <div>
-          Documentos destacados
-          <FeaturedDocuments />
-        </div>
-        <div>
-          Indicadores comunales
-          <CommunityIndicators />
-        </div>
-        <div>
-          Noticias destacadas
-          <News />
-        </div>
+        <FeaturedDocuments />
+        <CommunityIndicators />
+        <News />
       </div>
     </PageSection>
   );
