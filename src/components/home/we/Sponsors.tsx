@@ -2,33 +2,27 @@ export const Sponsors = () => {
   const partners = [
     {
       name: "Arcoiris",
-      logo: "/src/assets/arcoiris.png",
-      alt: "arcoiris logo"
+      logo: "arcoiris",
     },
     {
       name: "Mescyt",
-      logo: "/src/assets/mescyt.png",
-      alt: "Mescyt logo"
+      logo: "mescyt",
     },
     {
       name: "Mescyt",
-      logo: "/src/assets/barna.png",
-      alt: "Mescyt logo"
+      logo: "barna",
     },
     {
       name: "Mescyt",
-      logo: "/src/assets/haina.png",
-      alt: "Mescyt logo"
+      logo: "haina",
     },
     {
       name: "Mescyt",
-      logo: "/src/assets/intec.png",
-      alt: "Mescyt logo"
+      logo: "intec",
     },
-    {
+        {
       name: "Mescyt",
-      logo: "/src/assets/participacion.png",
-      alt: "Mescyt logo"
+      logo: "participacion",
     },
   ];
 
@@ -44,8 +38,8 @@ export const Sponsors = () => {
             className="flex items-center justify-center p-4 transition-transform hover:scale-105"
           >
             <img
-              src={partner.logo}
-              alt={partner.alt}
+              src={`/src/assets/logos/${partner.logo}.png`}
+              alt={partner.name}
               className="max-w-[200px] h-auto object-contain"
             />
           </div>

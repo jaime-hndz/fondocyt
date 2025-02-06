@@ -1,5 +1,7 @@
+import { NotFoundScreen } from "../notfound/NotFoundScreen"
+
 export const GeovisorScreen = () => {
   return (
-    <div>GeovisorScreen</div>
+    <NotFoundScreen />
   )
 }

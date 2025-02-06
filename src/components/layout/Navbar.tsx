@@ -9,7 +9,7 @@ export const Navbar = () => {
           <Link to={item.children[0].route}>
             <button
               key={index}
-              className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200 w-22 h-22"
+              className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-lg transition-colors duration-200 w-22 h-22"
             >
               <div>{<item.icon />}</div>
               <span className="text-xs text-center w-full">

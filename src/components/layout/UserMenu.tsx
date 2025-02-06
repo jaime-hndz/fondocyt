@@ -26,7 +26,7 @@ export const UserMenu = () => {
     <div>
       <button
         onClick={handleClick}
-        className="flex flex-col items-center justify-center p-2 text-white hover:bg-blue-500 rounded-lg transition-colors duration-200 w-22 h-22"
+        className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-lg transition-colors duration-200 w-22 h-22"
       >
         <div>{<AccountCircle />}</div>
       </button>
@@ -44,28 +44,34 @@ export const UserMenu = () => {
         {usuario ? (
           <>
             <Link to={"/user"}>
-                <MenuItem onClick={handleClose}>
+              <MenuItem onClick={handleClose}>
                 <ListItemIcon>
-                    <Person />
+                  <Person />
                 </ListItemIcon>
                 Usuario
-                </MenuItem>
+              </MenuItem>
             </Link>
-            <MenuItem color="error" onClick={handleLogout} className="text-red-400">
-                <ListItemIcon>
-                    <ExitToApp />
-                </ListItemIcon>
+            <MenuItem
+              color="error"
+              onClick={handleLogout}
+              className="text-red-400"
+            >
+              <ListItemIcon>
+                <ExitToApp />
+              </ListItemIcon>
               Cerrar sesión
             </MenuItem>
           </>
         ) : (
           <Link to={"/login"}>
             <MenuItem color="primary">
+              <ListItemIcon>
+                <ExitToApp />
+              </ListItemIcon>
               Iniciar sesión
             </MenuItem>
           </Link>
         )}
-        
       </Menu>
     </div>
   );

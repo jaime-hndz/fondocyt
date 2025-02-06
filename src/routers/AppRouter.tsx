@@ -8,6 +8,7 @@ import { NotFoundScreen } from "@/screens/public/notfound/NotFoundScreen";
 import { HomeScreen } from "@/screens/public/home/HomeScreen";
 import { NavItems } from "@/helpers/NavItems";
 import { UsuarioScreen } from "@/screens/public/tools/UsuarioScreen";
+import { SubNavbar } from "@/components/layout/SubNavbar";
 
 export const AppRouter = () => {
   return (
@@ -17,18 +18,21 @@ export const AppRouter = () => {
           <Routes>
             <Route element={<PrivateRoutes />}>
               <Route path="/user" element={<UsuarioScreen />} />
-            
             </Route>
             <Route element={<PublicRoutes />}>
               <Route element={<HomeScreen />} path="/" />
               <Route element={<LoginScreen />} path="/login" />
-              {NavItems.map((item) =>
-                item.children.map((c, i) => {
-                  return (
-                    <Route key={i} element={<c.element />} path={c.route} />
-                  );
-                })
-              )}
+              {NavItems.map((item) => {
+                return (
+                  <Route element={<SubNavbar NavItems={item.children} />}>
+                    {item.children.map((c, i) => {
+                      return (
+                        <Route key={i} element={<c.element />} path={c.route} />
+                      );
+                    })}
+                  </Route>
+                );
+              })}
               <Route path="*" element={<NotFoundScreen />} />
             </Route>
           </Routes>

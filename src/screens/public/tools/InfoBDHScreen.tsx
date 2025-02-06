@@ -1,5 +1,8 @@
+import { NotFoundScreen } from "../notfound/NotFoundScreen"
+
 export const InfoBDHScreen = () => {
   return (
-    <div>InfoBDHScreen</div>
+        <NotFoundScreen />
+    
   )
 }

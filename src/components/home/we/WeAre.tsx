@@ -1,4 +1,4 @@
-import analisis from '@/assets/anlisis.svg';
+import analisis from '@/assets/img/analisis.svg';
 
 export const WeAre = () => {
   return (
