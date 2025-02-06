@@ -12,7 +12,7 @@ export const AppLayout: React.FC<Props> = ({ children }) => {
   return (
     <div className="page absolute size-full">
       <Header />
-      <div>{children}</div>
+      <div style={{backgroundColor:  "#eeede8"}} className="min-h-[calc(100vh-7.5rem)]">{children}</div>
       <Footer />
     </div>
   );
