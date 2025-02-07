@@ -3,46 +3,53 @@ export const Sponsors = () => {
     {
       name: "Arcoiris",
       logo: "arcoiris",
+      link: "https://arcoirisrd.org"
     },
     {
       name: "Mescyt",
       logo: "mescyt",
+      link: "https://mescyt.gob.do"
     },
     {
-      name: "Mescyt",
+      name: "Barna",
       logo: "barna",
+      link: "https://barna.edu.do"
     },
     {
-      name: "Mescyt",
+      name: "Haina",
       logo: "haina",
+      link: "https://ayuntamientohaina.gob.do"
     },
     {
-      name: "Mescyt",
+      name: "Intec",
       logo: "intec",
+      link: "https://www.intec.edu.do"
     },
-        {
-      name: "Mescyt",
+    {
+      name: "Participación Ciudadana",
       logo: "participacion",
+      link: "https://pciudadana.org"
     },
   ];
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-4xl font-bold text-center mb-12 text-coral-500">
-      </h2>
-      
+      <h2 className="text-4xl font-bold text-center mb-12 text-coral-500"></h2>
+
       <div className="flex flex-wrap justify-center items-center gap-12">
-        {partners.map((partner) => (
-          <div 
-            key={partner.name}
-            className="flex items-center justify-center p-4 transition-transform hover:scale-105"
-          >
-            <img
-              src={`/src/assets/logos/${partner.logo}.png`}
-              alt={partner.name}
-              className="max-w-[200px] h-auto object-contain"
-            />
-          </div>
+        {partners.map((partner, i) => (
+          <a href={partner.link} key={i} target="_blank">
+            <div
+              key={partner.name}
+              className="flex items-center justify-center p-4 transition-transform hover:scale-105"
+            >
+              <img
+                src={`/src/assets/logos/${partner.logo}.png`}
+                alt={partner.name}
+                className="max-w-[200px] h-auto object-contain"
+              />
+            </div>
+          </a>
         ))}
       </div>
     </div>

@@ -9,6 +9,7 @@ import { HomeScreen } from "@/screens/public/home/HomeScreen";
 import { NavItems } from "@/helpers/NavItems";
 import { UsuarioScreen } from "@/screens/public/tools/UsuarioScreen";
 import { SubNavbar } from "@/components/layout/SubNavbar";
+import { InProcessScreen } from "@/screens/public/inprocess/InProcessScreen";
 
 export const AppRouter = () => {
   return (
@@ -27,7 +28,7 @@ export const AppRouter = () => {
                   <Route element={<SubNavbar NavItems={item.children} />}>
                     {item.children.map((c, i) => {
                       return (
-                        <Route key={i} element={<c.element />} path={c.route} />
+                        <Route key={i} element={<InProcessScreen />} path={c.route} />
                       );
                     })}
                   </Route>

@@ -10,7 +10,7 @@ export const Slider = () => {
     {
       title: "Ordenamiento Territorial",
       route: "",
-      style: "bg-[url('/src/assets/background/haina.jpg')]",
+      style: "bg-[url('/src/assets/background/haina.jpg')] bg-no-repeat bg-cover bg-center",
       element: (
         <>
           <div className="text-5xl font-bold mb-12 text-white">
@@ -34,7 +34,7 @@ export const Slider = () => {
           <div className="w-1/2 flex flex-col gap-10 justify-center ">
             <div className="text-5xl font-bold ">Geovisor</div>
             <div>
-              s Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloribus vero pariatur aliquid esse tempora tempore quas
               laboriosam quia culpa consectetur! Optio, eveniet provident
               numquam sint aperiam accusamus hic eos temporibus?
@@ -57,10 +57,6 @@ export const Slider = () => {
   return (
     <>
       <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
         slidesPerView={1}
         spaceBetween={30}
         effect={"fade"}
@@ -70,10 +66,10 @@ export const Slider = () => {
         }}
         navigation={true}
         modules={[EffectFade, Pagination, Navigation]}
-        className="mySwiper"
+        className="slider"
       >
-        {slides.map((c) => (
-          <SwiperSlide>
+        {slides.map((c, i) => (
+          <SwiperSlide key={i}>
             <div className={`  ${c.style}`}>
               <div className="min-h-[calc(100vh-7.5rem)] bg-black/50  flex flex-col gap-10 items-center justify-center">
                 {c.element}

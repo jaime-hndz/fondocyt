@@ -3,3 +3,8 @@
 .radial{
     background:  rgba(189,6,71,1);
 }
+
+.slider {
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff,
+}
