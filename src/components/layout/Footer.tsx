@@ -25,10 +25,10 @@ export const Footer = () => {
             <div className="text-sm text-gray-300">San Cristóbal</div>
             <div className="mb-1">República Dominicana</div>
             <div className="text-sm text-blue-400">
-              <Link className="hover:text-white" to={"/"}>Inicio </Link>
+              <Link className="hover:text-white transition-colors duration-200" to={"/"}>Inicio </Link>
               {NavItems.map((i) => (
                 <>
-                  | <Link className="hover:text-white" to={i.children[0].route}>{i.title}</Link>{" "}
+                  | <Link className="hover:text-white transition-colors duration-200 " to={i.children[0].route}>{i.title}</Link>{" "}
                 </>
               ))}
             </div>

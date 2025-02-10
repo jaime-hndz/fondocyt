@@ -57,7 +57,7 @@ export const NavItems = [
     children: [
       {
         icon: Info,
-        title: "Información Bajos de Haina",
+        title: "Bajos de Haina",
         route: "info_bdh",
         element: InfoBDHScreen,
       },

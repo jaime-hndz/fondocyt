@@ -6,9 +6,8 @@ export const Navbar = () => {
     <div className="hidden lg:flex space-x-4">
       {NavItems.map((item, index) => {
         return (
-          <Link to={item.children[0].route}>
+          <Link to={item.children[0].route} key={index}>
             <button
-              key={index}
               className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-lg transition-colors duration-200 w-22 h-22"
             >
               <div>{<item.icon />}</div>

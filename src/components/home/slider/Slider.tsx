@@ -71,7 +71,7 @@ export const Slider = () => {
         {slides.map((c, i) => (
           <SwiperSlide key={i}>
             <div className={`  ${c.style}`}>
-              <div className="min-h-[calc(100vh-7.5rem)] bg-black/50  flex flex-col gap-10 items-center justify-center">
+              <div className="min-h-[calc(100vh-6rem)] bg-black/50  flex flex-col gap-10 items-center justify-center">
                 {c.element}
               </div>
             </div>
