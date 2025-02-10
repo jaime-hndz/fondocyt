@@ -4,6 +4,7 @@ import { EffectFade, Pagination, Navigation } from "swiper/modules";
 import { Button } from "@mui/material";
 import { Link } from "react-router";
 import img from "@/assets/img/geo.svg";
+import {  NavigateNext } from "@mui/icons-material";
 
 export const Slider = () => {
   const slides = [
@@ -17,7 +18,7 @@ export const Slider = () => {
             Ordenamiento Territorial
           </div>
           <Link to={"/ordenamiento_territorial"}>
-            <Button variant="contained">Ver herramienta</Button>
+            <Button endIcon={<NavigateNext />} variant="contained">Ver herramienta</Button>
           </Link>
         </>
       ),
@@ -42,6 +43,7 @@ export const Slider = () => {
             <div>
               <Link to={"/ordenamiento_territorial"}>
                 <Button
+                  endIcon={<NavigateNext />}
                   variant="contained"
                   style={{ backgroundColor: "#F50057" }}
                 >

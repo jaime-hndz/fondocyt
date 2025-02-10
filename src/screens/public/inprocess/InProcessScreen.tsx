@@ -2,6 +2,7 @@ import { useState } from 'react';
 import inprocess from '@/assets/img/inprocess.svg';
 import { Button } from '@mui/material';
 import { Link } from 'react-router';
+import { NavigateBefore } from '@mui/icons-material';
 
 export const InProcessScreen = () => {
   const [loaded, setLoaded] = useState(false);
@@ -22,7 +23,7 @@ export const InProcessScreen = () => {
         Ops... esta página aún no está lista.
       </h2>
       <Link to='/'>
-        <Button variant='contained' style={{ backgroundColor: '#4983f7' }}>
+        <Button variant='contained' startIcon={<NavigateBefore />} style={{ backgroundColor: '#4983f7' }}>
           Volver al inicio
         </Button>
       </Link>

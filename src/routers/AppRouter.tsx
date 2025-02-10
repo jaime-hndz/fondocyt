@@ -7,9 +7,10 @@ import LoginScreen from "@/screens/public/login/LoginScreen";
 import { NotFoundScreen } from "@/screens/public/notfound/NotFoundScreen";
 import { HomeScreen } from "@/screens/public/home/HomeScreen";
 import { NavItems } from "@/helpers/NavItems";
-import { UsuarioScreen } from "@/screens/public/tools/UsuarioScreen";
 import { SubNavbar } from "@/components/layout/SubNavbar";
 import { InProcessScreen } from "@/screens/public/inprocess/InProcessScreen";
+import { UserScreen } from "@/screens/private/user/UserScreen";
+import { RegisterScreen } from "@/screens/public/login/RegisterScreen";
 
 export const AppRouter = () => {
   return (
@@ -20,11 +21,13 @@ export const AppRouter = () => {
         <AppLayout>
           <Routes>
             <Route element={<PrivateRoutes />}>
-              <Route path="/user" element={<UsuarioScreen />} />
+              <Route path="/user" element={<UserScreen />} />
             </Route>
             <Route element={<PublicRoutes />}>
               <Route element={<HomeScreen />} path="/" />
               <Route element={<LoginScreen />} path="/login" />
+              <Route element={<RegisterScreen />} path="/register" />
+
               {NavItems.map((item) => {
                 return (
                   <Route element={<SubNavbar NavItems={item.children} />}>
