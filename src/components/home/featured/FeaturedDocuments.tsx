@@ -1,8 +1,9 @@
+import img from '@/assets/doc1.png'
 export const FeaturedDocuments = () => {
   const documents = [
     {
       id: 1,
-      image: "src/assets/doc1.png",
+      image: img,
       title: "TU MUNICIPIO EN CIFRAS Bajos de Haina",
       alt: "Portada del Plan de Inversiones"
     },
@@ -19,7 +20,7 @@ export const FeaturedDocuments = () => {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {documents.map((doc) => (
-                <a href='src/assets/pdf/municipio-en-cifras-bajos-de-haina.pdf'>
+                <a href='https://www.one.gob.do/publicaciones/2024/tu-municipio-en-cifras-bajos-de-haina/'>
                 <div 
                   key={doc.id} 
                   className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"

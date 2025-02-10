@@ -14,7 +14,9 @@ import { InProcessScreen } from "@/screens/public/inprocess/InProcessScreen";
 export const AppRouter = () => {
   return (
     <AppContextProvider>
-      <Router>
+      <Router
+        basename={import.meta.env.DEV ? "/" : "/fondocyt/"}
+      >
         <AppLayout>
           <Routes>
             <Route element={<PrivateRoutes />}>
@@ -28,7 +30,11 @@ export const AppRouter = () => {
                   <Route element={<SubNavbar NavItems={item.children} />}>
                     {item.children.map((c, i) => {
                       return (
-                        <Route key={i} element={<InProcessScreen />} path={c.route} />
+                        <Route
+                          key={i}
+                          element={<InProcessScreen />}
+                          path={c.route}
+                        />
                       );
                     })}
                   </Route>
