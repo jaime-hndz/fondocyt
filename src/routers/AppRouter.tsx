@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router";
 import { AppContextProvider } from "@/context/AppContext";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { PrivateRoutes } from "./PrivateRoutes";
@@ -11,43 +11,72 @@ import { SubNavbar } from "@/components/layout/SubNavbar";
 import { InProcessScreen } from "@/screens/public/inprocess/InProcessScreen";
 import { UserScreen } from "@/screens/private/user/UserScreen";
 import { RegisterScreen } from "@/screens/public/login/RegisterScreen";
+import { AnimatePresence, motion } from "framer-motion";
+import { ReactNode } from "react";
 
-export const AppRouter = () => {
+export const AppRouter: React.FC = () => {
   return (
     <AppContextProvider>
-      <Router
-        basename={import.meta.env.DEV ? "/" : "/fondocyt/"}
-      >
+      <Router basename={import.meta.env.DEV ? "/" : "/fondocyt/"}>
         <AppLayout>
-          <Routes>
-            <Route element={<PrivateRoutes />}>
-              <Route path="/user" element={<UserScreen />} />
-            </Route>
-            <Route element={<PublicRoutes />}>
-              <Route element={<HomeScreen />} path="/" />
-              <Route element={<LoginScreen />} path="/login" />
-              <Route element={<RegisterScreen />} path="/register" />
-
-              {NavItems.map((item) => {
-                return (
-                  <Route element={<SubNavbar NavItems={item.children} />}>
-                    {item.children.map((c, i) => {
-                      return (
-                        <Route
-                          key={i}
-                          element={<InProcessScreen />}
-                          path={c.route}
-                        />
-                      );
-                    })}
-                  </Route>
-                );
-              })}
-              <Route path="*" element={<NotFoundScreen />} />
-            </Route>
-          </Routes>
+          <AnimatedRoutes />
         </AppLayout>
       </Router>
     </AppContextProvider>
   );
 };
+
+const AnimatedRoutes: React.FC = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes key={location.pathname} location={location}>
+        <Route element={<PrivateRoutes />}>
+          <Route path="/user" element={<PageWrapper><UserScreen /></PageWrapper>} />
+        </Route>
+
+        <Route element={<PublicRoutes />}>
+          <Route path="/" element={<PageWrapper><HomeScreen /></PageWrapper>} />
+          <Route path="/login" element={<PageWrapper><LoginScreen /></PageWrapper>} />
+          <Route path="/register" element={<PageWrapper><RegisterScreen /></PageWrapper>} />
+
+          {NavItems.map((item, i) => (
+            <Route key={i} element={<SubNavbar NavItems={item.children} />}>
+              {item.children.map((c, i) => (
+                <Route
+                  key={i}
+                  element={<PageWrapper><InProcessScreen /></PageWrapper>}
+                  path={c.route}
+                />
+              ))}
+            </Route>
+          ))}
+
+          <Route path="*" element={<PageWrapper><NotFoundScreen /></PageWrapper>} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
+// Define la estructura de props con TypeScript
+interface PageWrapperProps {
+  children: ReactNode;
+}
+
+// Componente para animación de página
+const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export default AppRouter;
