@@ -6,7 +6,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/fondocyt/',
+  base:'/',
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   resolve: {
     alias: {

@@ -21,9 +21,46 @@ import {
   Event,
   AddModerator,
   ContactSupport,
+  LocalLibrary
+  
 } from "@mui/icons-material";
 
 export const NavItems = [
+  {
+    icon: LocalLibrary,
+    title: "Nosotros",
+    children: [
+      {
+        icon: LocalLibrary,
+        title: "¿Qué es el observatorio?",
+        route: "acerca",
+        element: OrdenamientoTerritorialScreen,
+          
+      },
+      {
+        icon: LocalLibrary,
+        title: "Fines",
+        route: "fines",
+        element: OrdenamientoTerritorialScreen,
+          
+      },
+      {
+        icon: LocalLibrary,
+        title: "Valores",
+        route: "valores",
+        element: OrdenamientoTerritorialScreen,
+          
+      },
+      {
+        icon: LocalLibrary,
+        title: "Participantes",
+        route: "participantes",
+        element: OrdenamientoTerritorialScreen,
+          
+      },
+
+    ]
+  },
   {
     icon: Terrain,
     title: "Ordenamiento Territorial",
@@ -34,6 +71,12 @@ export const NavItems = [
         route: "ordenamiento_territorial",
         element: OrdenamientoTerritorialScreen,
           
+      },
+      {
+        icon: Gavel,
+        title: "Normativa",
+        route: "normativa",
+        element: NormativaScreen,
       },
 
     ]
@@ -63,8 +106,8 @@ export const NavItems = [
       },
       {
         icon: Gavel,
-        title: "Normativa",
-        route: "normativa",
+        title: "Historia",
+        route: "Historia",
         element: NormativaScreen,
       },
       {
@@ -73,12 +116,7 @@ export const NavItems = [
         route: "servicios",
         element: ServiciosScreen,
       },
-      {
-        icon: Event,
-        title: "Eventos",
-        route: "eventos",
-        element: EventosScreen,
-      },
+
     ]
   },
   {
@@ -108,6 +146,12 @@ export const NavItems = [
         title: "Participación Comunitaria",
         route: "participacion_comunitaria",
         element: ParticipacionComunitariaScreen,
+      },
+      {
+        icon: Event,
+        title: "Eventos",
+        route: "eventos",
+        element: EventosScreen,
       },
     ]
   },

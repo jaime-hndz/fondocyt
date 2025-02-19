@@ -3,6 +3,7 @@ import { OverridableComponent } from "@mui/material/OverridableComponent";
 import React from "react";
 import { Link, Outlet } from "react-router";
 import { useLocation } from "react-router";
+import { motion } from "framer-motion";
 
 interface NavItemsInterfaces {
   route: string;
@@ -22,7 +23,13 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
   console.log(location.pathname);
   return (
     <>
-      <div className="hidden lg:flex pl-10 bg-black/50">
+      <motion.div
+  initial={{ opacity: 0,  }} // Estado inicial (oculto)
+  animate={{ opacity: 1, }} // Estado visible
+  exit={{ opacity: 0,   }} // Estado al salir
+  transition={{ duration: 0.5, ease: "easeOut" }} // Duración de la animación
+  className="hidden lg:flex pl-10 bg-black/50"
+>
         {NavItems.map(
           (
             item: {
@@ -58,7 +65,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
             );
           }
         )}
-      </div>
+      </motion.div>
       <Outlet />
     </>
   );
