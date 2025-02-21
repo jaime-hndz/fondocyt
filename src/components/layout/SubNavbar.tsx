@@ -66,7 +66,9 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
           }
         )}
       </motion.div>
-      <Outlet />
+      <div className="px-25 py-10">
+        <Outlet />
+      </div>
     </>
   );
 };

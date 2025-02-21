@@ -46,7 +46,7 @@ const AnimatedRoutes: React.FC = () => {
               {item.children.map((c, i) => (
                 <Route
                   key={i}
-                  element={<PageWrapper><InProcessScreen /></PageWrapper>}
+                  element={<PageWrapper>{c.element ? <c.element /> : <InProcessScreen />}</PageWrapper>}
                   path={c.route}
                 />
               ))}

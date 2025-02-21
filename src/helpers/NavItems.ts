@@ -1,14 +1,16 @@
-import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
-import { EventosScreen } from "@/screens/public/tools/EventosScreen";
-import { GeovisorScreen } from "@/screens/public/tools/GeovisorScreen";
-import { GestionRiesgosScreen } from "@/screens/public/tools/GestionRiesgosScreen";
-import { InfoBDHScreen } from "@/screens/public/tools/InfoBDHScreen";
-import { NormativaScreen } from "@/screens/public/tools/NormativaScreen";
-import { OrdenamientoTerritorialScreen } from "@/screens/public/tools/OrdenamientoTerritorialScreen";
-import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
-import { ParticipacionComunitariaScreen } from "@/screens/public/tools/ParticipacionComunitariaScreen";
-import { ServiciosScreen } from "@/screens/public/tools/ServiciosScreen";
-import { TransparenciaScreen } from "@/screens/public/tools/TransparenciaScreen";
+import { AboutScreen } from "@/screens/public/about/AboutScreen";
+import { ParticipantsScreen } from "@/screens/public/about/ParticipantsScreen";
+// import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
+// import { EventosScreen } from "@/screens/public/tools/EventosScreen";
+// import { GeovisorScreen } from "@/screens/public/tools/GeovisorScreen";
+// import { GestionRiesgosScreen } from "@/screens/public/tools/GestionRiesgosScreen";
+// import { InfoBDHScreen } from "@/screens/public/tools/InfoBDHScreen";
+// import { NormativaScreen } from "@/screens/public/tools/NormativaScreen";
+// import { OrdenamientoTerritorialScreen } from "@/screens/public/tools/OrdenamientoTerritorialScreen";
+// import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
+// import { ParticipacionComunitariaScreen } from "@/screens/public/tools/ParticipacionComunitariaScreen";
+// import { ServiciosScreen } from "@/screens/public/tools/ServiciosScreen";
+// import { TransparenciaScreen } from "@/screens/public/tools/TransparenciaScreen";
 import {
   Map,
   Terrain,
@@ -34,28 +36,26 @@ export const NavItems = [
         icon: LocalLibrary,
         title: "¿Qué es el observatorio?",
         route: "acerca",
-        element: OrdenamientoTerritorialScreen,
+        element: AboutScreen,
           
       },
       {
         icon: LocalLibrary,
         title: "Fines",
         route: "fines",
-        element: OrdenamientoTerritorialScreen,
           
       },
       {
         icon: LocalLibrary,
         title: "Valores",
         route: "valores",
-        element: OrdenamientoTerritorialScreen,
           
       },
       {
         icon: LocalLibrary,
         title: "Participantes",
         route: "participantes",
-        element: OrdenamientoTerritorialScreen,
+        element: ParticipantsScreen,
           
       },
 
@@ -69,14 +69,12 @@ export const NavItems = [
         icon: Terrain,
         title: "Ordenamiento Territorial",
         route: "ordenamiento_territorial",
-        element: OrdenamientoTerritorialScreen,
           
       },
       {
         icon: Gavel,
         title: "Normativa",
         route: "normativa",
-        element: NormativaScreen,
       },
 
     ]
@@ -89,7 +87,6 @@ export const NavItems = [
         icon: Map,
         title: "Geovisor",
         route: "geovisor",
-        element: GeovisorScreen,
       }
     ]
   },
@@ -102,19 +99,16 @@ export const NavItems = [
         icon: Info,
         title: "Bajos de Haina",
         route: "info_bdh",
-        element: InfoBDHScreen,
       },
       {
         icon: Gavel,
         title: "Historia",
         route: "Historia",
-        element: NormativaScreen,
       },
       {
         icon: MedicalInformation,
         title: "Servicios",
         route: "servicios",
-        element: ServiciosScreen,
       },
 
     ]
@@ -127,7 +121,6 @@ export const NavItems = [
         icon: NotificationImportant,
         title: "Gestión de Riesgos",
         route: "gestion_riesgos",
-        element: GestionRiesgosScreen,
       },
     ]
   },
@@ -139,19 +132,16 @@ export const NavItems = [
         icon: People,
         title: "Participación Ciudadana",
         route: "participacion_ciudadana",
-        element: ParticipacionCiudadanaScreen,
       },
       {
         icon: HomeWork,
         title: "Participación Comunitaria",
         route: "participacion_comunitaria",
-        element: ParticipacionComunitariaScreen,
       },
       {
         icon: Event,
         title: "Eventos",
         route: "eventos",
-        element: EventosScreen,
       },
     ]
   },
@@ -164,7 +154,6 @@ export const NavItems = [
         icon: AddModerator,
         title: "Transparencia",
         route: "transparencia",
-        element: TransparenciaScreen,
       },
     ]
   },
@@ -176,7 +165,6 @@ export const NavItems = [
         icon: ContactSupport,
         title: "Contacto",
         route: "contacto",
-        element: ContactoScreen,
       },
     ]
   },
