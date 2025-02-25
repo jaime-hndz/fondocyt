@@ -1,8 +1,9 @@
-import { NotFoundScreen } from "../notfound/NotFoundScreen"
 
 export const ParticipacionCiudadanaScreen = () => {
   return (
-        <NotFoundScreen />
+        <div className="">
+          <iframe className="w-screen h-screen static x-<-10px>" src="http://localhost:8000" />
+        </div>
     
   )
 }

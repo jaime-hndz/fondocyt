@@ -1,5 +1,6 @@
 import { AboutScreen } from "@/screens/public/about/AboutScreen";
 import { ParticipantsScreen } from "@/screens/public/about/ParticipantsScreen";
+import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
 // import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
 // import { EventosScreen } from "@/screens/public/tools/EventosScreen";
 // import { GeovisorScreen } from "@/screens/public/tools/GeovisorScreen";
@@ -132,6 +133,8 @@ export const NavItems = [
         icon: People,
         title: "Participación Ciudadana",
         route: "participacion_ciudadana",
+        element: ParticipacionCiudadanaScreen
+
       },
       {
         icon: HomeWork,
