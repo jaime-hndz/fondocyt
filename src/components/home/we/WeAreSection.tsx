@@ -7,7 +7,7 @@ export const WeAreSection = () => {
     <PageSection>
         <div className='flex flex-col gap-10'>
           <WeAre />
-          <Sponsors />
+          {/* <Sponsors /> */}
         </div>
     </PageSection>
     

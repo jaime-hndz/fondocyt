@@ -1,5 +1,8 @@
 import { AboutScreen } from "@/screens/public/about/AboutScreen";
-import { ParticipantsScreen } from "@/screens/public/about/ParticipantsScreen";
+import { BajosHainaScreen } from "@/screens/public/info/BajosHainaScreen";
+import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
+import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
+import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
 import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
 // import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
 // import { EventosScreen } from "@/screens/public/tools/EventosScreen";
@@ -24,7 +27,8 @@ import {
   Event,
   AddModerator,
   ContactSupport,
-  LocalLibrary
+  LocalLibrary,
+  LibraryBooks
   
 } from "@mui/icons-material";
 
@@ -39,25 +43,36 @@ export const NavItems = [
         route: "acerca",
         element: AboutScreen,
           
+      }
+    ]
+  },
+  {
+    icon: Info,
+    title: "Información General",
+    children: [
+      {
+        icon: Info,
+        title: "Bajos de Haina",
+        route: "info_bdh",
+        element: BajosHainaScreen
       },
       {
-        icon: LocalLibrary,
-        title: "Fines",
-        route: "fines",
-          
+        icon: Gavel,
+        title: "Historia",
+        route: "Historia",
+        element: HistoriaScreen
       },
       {
-        icon: LocalLibrary,
-        title: "Valores",
-        route: "valores",
-          
+        icon: MedicalInformation,
+        title: "Servicios",
+        route: "servicios",
+        element: ServiciosScreen
       },
       {
-        icon: LocalLibrary,
-        title: "Participantes",
-        route: "participantes",
-        element: ParticipantsScreen,
-          
+        icon: LibraryBooks,
+        title: "Biblioteca",
+        route: "biblioteca",
+        element: BibliotecaScreen
       },
 
     ]
@@ -85,35 +100,25 @@ export const NavItems = [
     title: "Geovisor",
     children: [
       {
-        icon: Map,
-        title: "Geovisor",
+        title: "Caracterización socioeconómica ",
         route: "geovisor",
+      },
+      {
+        title: "Caracterización fisica",
+        route: "geovisor2",
+      },
+      {
+        title: "Gestión de riesgos",
+        route: "geovisor3",
+      },
+      {
+        title: "Ordenamiento territorial",
+        route: "geovisor4",
       }
     ]
   },
 
-  {
-    icon: Info,
-    title: "Información General",
-    children: [
-      {
-        icon: Info,
-        title: "Bajos de Haina",
-        route: "info_bdh",
-      },
-      {
-        icon: Gavel,
-        title: "Historia",
-        route: "Historia",
-      },
-      {
-        icon: MedicalInformation,
-        title: "Servicios",
-        route: "servicios",
-      },
 
-    ]
-  },
   {
     icon: NotificationImportant,
     title: "Gestión de Riesgos",

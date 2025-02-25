@@ -1,4 +1,4 @@
-import { Article } from "@/components/layout/Article";
+import { Article } from "@/components/layout/Article/Article";
 
 export const FinesScreen = () => {
   return (

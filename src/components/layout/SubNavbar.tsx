@@ -56,7 +56,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
                       : undefined
                   }
                 >
-                  <div>{<item.icon />}</div>
+                  {item.icon ? <div>{<item.icon />}</div>: null}
                   <span className="text-xs text-center w-full">
                     {item.title}
                   </span>
