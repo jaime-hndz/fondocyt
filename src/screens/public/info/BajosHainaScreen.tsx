@@ -7,27 +7,26 @@ import haina4 from "@/assets/img/haina4.png";
 
 export const BajosHainaScreen = () => {
   return (
-    <div>
-      <ArticleContainer>
-        <div className="flex gap-10 center align-middle">
-          <div className="w-1/3 " >
-            <img src={haina1} />
-          </div >
-          <div className="w-2/3">
-            <div>
-              El municipio de Bajos de Haina pertenece a la provincia de San
-              Cristóbal, en la región sur de la República Dominicana. Se
-              encuentra ubicado entre los 18º 25' N y 70º 01' W. Sus límites
-              son: Mar Caribe al norte y al oeste; el Distrito Municipal de
-              Nigua al sur y la ciudad de Santo Domingo al este, separada de
-              ésta escasamente por el río Haina. Por la vía terrestre Bajos de
-              Haina dista a unos 15 kilómetros de Santo Domingo. El municipio se
-              encuentra localizado en la cuenca baja del Río Haina, que tiene
-              una extensión de unos 86 kilómetros y que precisamente desemboca
-              al mar caribe en los limites municipales que comparte con la
-              ciudad de Santo Domingo.
+    <ArticleContainer>
+      <div className="text-xl text-justify flex flex-col gap-10">
+        <div className=" ">
+          El municipio de Basjos de Haina pertenece a la provincia de San
+          Cristóbal, en la región sur de la República Dominicana. Se encuentra
+          ubicado entre los 18º 25' N y 70º 01' W. Sus límites son: Mar Caribe
+          al norte y al oeste; el Distrito Municipal de Nigua al sur y la ciudad
+          de Santo Domingo al este, separada de ésta escasamente por el río
+          Haina. Por la vía terrestre Bajos de Haina dista a unos 15 kilómetros
+          de Santo Domingo. El municipio se encuentra localizado en la cuenca
+          baja del Río Haina, que tiene una extensión de unos 86 kilómetros y
+          que precisamente desemboca al mar caribe en los limites municipales
+          que comparte con la ciudad de Santo Domingo.
+        </div>
+        <Article title="Descripción general de Municipio Bajos de Haina ">
+          <div className="flex gap-10 center align-middle">
+            <div className="w-1/3 ">
+              <img src={haina1} />
             </div>
-            <Article title="Descripción general de Municipio Bajos de Haina ">
+            <div className="w-2/3 text-xl flex flex-col gap-5">
               <p>
                 Bajos de Haina se encuentra ubicado en el litoral sur de la
                 República Dominicana. En el extremo sureste de la provincia San
@@ -53,18 +52,20 @@ export const BajosHainaScreen = () => {
                 Pared) ocupa unos 25.5 km², un 64% de toda la superficie de la
                 demarcación. (ONE, 2021)
               </p>
-            </Article>
+            </div>
           </div>
-        </div>
-        <div className="flex">
-          <div className="w-1/3">
-            <img src={haina2} />
-            <span>
-              Residuos sólidos arrojados a una de las cañadas de Bajos de Haina
-            </span>
-          </div>
-          <div className="w-2/3">
-            <Article title="Bajos de Haina. Datos relevantes">
+        </Article>
+
+        <Article title="Bajos de Haina. Datos relevantes">
+          <div className="flex gap-10">
+            <div className="w-1/3 px-10">
+              <img className="w-full" src={haina2} />
+              <span className="text-xl text-justify">
+                Residuos sólidos arrojados a una de las cañadas de Bajos de
+                Haina
+              </span>
+            </div>
+            <div className="w-2/3  text-xl flex flex-col gap-5">
               <p>
                 De acuerdo con el Censo de 2022, el Municipio de Bajos de Haina
                 contaba con una población estimada de 159.888 habitantes. Las
@@ -112,10 +113,11 @@ export const BajosHainaScreen = () => {
                 cañadas. Al respecto, invitamos a los pobladores y visitantes a
                 participar de nuestros foros, si está interesado ingrese aquí:
               </p>
-            </Article>
+            </div>
           </div>
-        </div>
-        <div className="my-10 text-justify">
+        </Article>
+
+        <div className="text-justify">
           <p>
             En 2022, en el municipio Bajos de Haina operaba un número
             considerable de empresas (5,430) que aportaban USD 440 millones
@@ -159,7 +161,7 @@ export const BajosHainaScreen = () => {
             </span>
           </div>
         </div>
-      </ArticleContainer>
-    </div>
+      </div>
+    </ArticleContainer>
   );
 };
