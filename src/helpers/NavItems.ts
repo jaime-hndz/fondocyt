@@ -3,6 +3,7 @@ import { BajosHainaScreen } from "@/screens/public/info/BajosHainaScreen";
 import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
 import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
 import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
+import { EventosScreen } from "@/screens/public/tools/EventosScreen";
 import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
 // import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
 // import { EventosScreen } from "@/screens/public/tools/EventosScreen";
@@ -150,6 +151,7 @@ export const NavItems = [
         icon: Event,
         title: "Eventos",
         route: "eventos",
+        element: EventosScreen
       },
     ]
   },
