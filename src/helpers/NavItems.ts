@@ -4,6 +4,7 @@ import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
 import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
 import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
 import { EventosScreen } from "@/screens/public/tools/EventosScreen";
+import { NormativaScreen } from "@/screens/public/tools/NormativaScreen";
 import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
 // import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
 // import { EventosScreen } from "@/screens/public/tools/EventosScreen";
@@ -92,6 +93,7 @@ export const NavItems = [
         icon: Gavel,
         title: "Normativa",
         route: "normativa",
+        element: NormativaScreen
       },
 
     ]
