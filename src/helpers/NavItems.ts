@@ -50,7 +50,7 @@ export const NavItems = [
   },
   {
     icon: Info,
-    title: "Información General",
+    title: "Información",
     children: [
       {
         icon: Info,
@@ -81,7 +81,7 @@ export const NavItems = [
   },
   {
     icon: Terrain,
-    title: "Ordenamiento Territorial",
+    title: "Ordenamiento",
     children: [
       {
         icon: Terrain,
@@ -124,7 +124,7 @@ export const NavItems = [
 
   {
     icon: NotificationImportant,
-    title: "Gestión de Riesgos",
+    title: "Riesgos",
     children: [
       {
         icon: NotificationImportant,

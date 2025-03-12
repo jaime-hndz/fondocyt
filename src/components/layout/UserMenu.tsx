@@ -9,7 +9,7 @@ export const UserMenu = () => {
     <>
       <Tooltip title={!usuario ? "Iniciar sesión" : "Usuario"}>
         <Link to={"/user"}>
-          <button className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-lg transition-colors duration-200 w-22 h-22">
+          <button className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50  transition-colors duration-200 w-24 h-22">
             <div>{<AccountCircle />}</div>
           </button>
         </Link>

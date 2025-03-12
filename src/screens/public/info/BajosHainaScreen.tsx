@@ -10,7 +10,7 @@ export const BajosHainaScreen = () => {
     <ArticleContainer>
       <div className="text-xl text-justify flex flex-col gap-10">
         <div className=" ">
-          El municipio de Basjos de Haina pertenece a la provincia de San
+          El municipio de Bajos de Haina pertenece a la provincia de San
           Cristóbal, en la región sur de la República Dominicana. Se encuentra
           ubicado entre los 18º 25' N y 70º 01' W. Sus límites son: Mar Caribe
           al norte y al oeste; el Distrito Municipal de Nigua al sur y la ciudad

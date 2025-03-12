@@ -1,5 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=inter:wght@200..800&display=swap');
 
+
+*{
+    font-family: "inter", sans-serif;
+  }
 .radial{
     background:  rgba(189,6,71,1);
 }
