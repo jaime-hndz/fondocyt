@@ -20,11 +20,11 @@ export const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="text-right text-sm w-md">
+          <div className="text-center lg:text-right text-sm ">
             <div className="text-xl font-bold">Bajos de Haina</div>
             <div className="text-sm text-gray-300">San Cristóbal</div>
             <div className="mb-1">República Dominicana</div>
-            <div className="text-sm text-blue-400">
+            <div className="text-sm text-blue-400 hidden lg:inline">
               <Link className="hover:text-white transition-colors duration-200" to={"/"}>Inicio </Link>
               {NavItems.map((i, index) => (
                 <div key={index}>
@@ -34,7 +34,7 @@ export const Footer = () => {
             </div>
 
             <div className="text-gray-400 text-xs">
-              Todos los derechos reservados
+              Todos los derechos reservados ©
             </div>
           </div>
         </div>

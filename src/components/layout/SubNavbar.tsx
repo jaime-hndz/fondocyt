@@ -28,7 +28,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
   animate={{ opacity: 1, }} // Estado visible
   exit={{ opacity: 0,   }} // Estado al salir
   transition={{ duration: 0.5, ease: "easeOut" }} // Duración de la animación
-  className="hidden lg:flex pl-10 bg-black/50"
+  className="hidden flex pl-10 bg-black/50"
 >
         {NavItems.map(
           (
@@ -66,7 +66,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
           }
         )}
       </motion.div>
-      <div className="px-25 py-10">
+      <div className="lg:px-25 py-10">
         <Outlet />
       </div>
     </>

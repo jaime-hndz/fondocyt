@@ -7,7 +7,7 @@ export const AboutScreen = () => {
   return (
     <ArticleContainer>
       <Article title="¿Qué es el observatorio?">
-        <div className="flex">
+        <div className="lg:flex">
           <div className="flex flex-col gap-10">
             <div>
               Es un espacio de concertación política y social para promover el
@@ -38,7 +38,7 @@ export const AboutScreen = () => {
               </ul>
             </div>
           </div>
-          <div className="w-400">
+          <div className="lg:w-400">
             <img src={observatorio} />
           </div>
         </div>

@@ -14,7 +14,7 @@ export const Slider = () => {
       style: "bg-[url('/src/assets/background/haina.jpg')] bg-no-repeat bg-cover bg-center",
       element: (
         <>
-          <div className="text-5xl font-bold mb-12 text-white">
+          <div className="text-3xl p-10 text-center lg:text-5xl font-bold mb-12 text-white">
             Ordenamiento Territorial
           </div>
           <Link to={"/ordenamiento_territorial"}>
@@ -29,12 +29,12 @@ export const Slider = () => {
       style: "radial",
       element: (
         <div className=" w-4/5 h-150 flex gap-10 p-10 text-white ">
-          <div className="w-1/2">
+          <div className="w-1/2 hidden lg:inline">
             <img src={img} />
           </div>
-          <div className="w-1/2 flex flex-col gap-10 justify-center ">
-            <div className="text-5xl font-bold ">Geovisor</div>
-            <div>
+          <div className="lg:w-1/2 flex flex-col gap-10 justify-center ">
+            <div className="text-center text-3xl lg:text-5xl font-bold ">Geovisor</div>
+            <div className="hidden lg:inline">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloribus vero pariatur aliquid esse tempora tempore quas
               laboriosam quia culpa consectetur! Optio, eveniet provident
@@ -73,7 +73,7 @@ export const Slider = () => {
         {slides.map((c, i) => (
           <SwiperSlide key={i}>
             <div className={`  ${c.style}`}>
-              <div className="min-h-[calc(100vh-6rem)] bg-black/50  flex flex-col gap-10 items-center justify-center">
+              <div className="min-h-[calc(100vh-5.5rem)] bg-black/50  flex flex-col gap-10 items-center justify-center">
                 {c.element}
               </div>
             </div>

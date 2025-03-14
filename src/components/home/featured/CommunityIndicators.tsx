@@ -1,6 +1,6 @@
 export const CommunityIndicators = () => {
   return (
-    <div className="w-[80vw] h-[80vh] p-10">
+    <div className="lg:w-[80vw] h-[80vh] p-10">
       <h2 className="text-4xl font-bold mb-12 text-coral-500">
         Indicadores comunales
       </h2>

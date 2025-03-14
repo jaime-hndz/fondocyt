@@ -22,11 +22,11 @@ export const BajosHainaScreen = () => {
           que comparte con la ciudad de Santo Domingo.
         </div>
         <Article title="Descripción general de Municipio Bajos de Haina ">
-          <div className="flex gap-10 center align-middle">
-            <div className="w-1/3 ">
+          <div className="lg:flex gap-10 center align-middle">
+            <div className="lg:w-1/3 ">
               <img src={haina1} />
             </div>
-            <div className="w-2/3 text-xl flex flex-col gap-5">
+            <div className="lg:w-2/3 text-xl flex flex-col gap-5">
               <p>
                 Bajos de Haina se encuentra ubicado en el litoral sur de la
                 República Dominicana. En el extremo sureste de la provincia San
@@ -57,15 +57,15 @@ export const BajosHainaScreen = () => {
         </Article>
 
         <Article title="Bajos de Haina. Datos relevantes">
-          <div className="flex gap-10">
-            <div className="w-1/3 px-10">
+          <div className="lg:flex gap-10">
+            <div className="lg:w-1/3 px-10">
               <img className="w-full" src={haina2} />
               <span className="text-xl text-justify">
                 Residuos sólidos arrojados a una de las cañadas de Bajos de
                 Haina
               </span>
             </div>
-            <div className="w-2/3  text-xl flex flex-col gap-5">
+            <div className="lg:w-2/3  text-xl flex flex-col gap-5">
               <p>
                 De acuerdo con el Censo de 2022, el Municipio de Bajos de Haina
                 contaba con una población estimada de 159.888 habitantes. Las
@@ -141,8 +141,8 @@ export const BajosHainaScreen = () => {
             interesado ingrese aquí
           </p>
         </div>
-        <div className="flex gap-10">
-          <div className="w-1/2">
+        <div className="lg:flex gap-10">
+          <div className="lg:w-1/2">
             <img className="w-full" src={haina3} />
             <span className="text-justify">
               Los corales del mar en inmediaciones hasta a más de tres
@@ -153,7 +153,7 @@ export const BajosHainaScreen = () => {
               Herrera, Betancourt y Alcolado, 2010).
             </span>
           </div>
-          <div className="w-1/2 px-15">
+          <div className="lg:w-1/2 lg:px-15">
             <img className="w-full" src={haina4} />
             <span className="text-justify">
               Estado del muelle luego de la lluvia presentada el día 22 de mayo
