@@ -11,119 +11,119 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
-import ley606 from '@/assets/pdf/Ley-6-06.pdf';
-import ley12601 from '@/assets/pdf/Ley-126-01.pdf';
-import ley20004 from '@/assets/pdf/Ley-200-04.pdf';
-import ley42306 from '@/assets/pdf/Ley-423-06.pdf';
-import ley49806 from '@/assets/pdf/Ley-498-06.pdf';
-import ley56705 from '@/assets/pdf/Ley-567-05.pdf';
-import ley8279 from '@/assets/pdf/Ley-No-.-82-79.pdf';
-import ley48108 from '@/assets/pdf/Ley-No-.481-08.pdf';
-import ley507 from '@/assets/pdf/Ley-No.-5-07.pdf';
-import ley1004 from '@/assets/pdf/Ley-No.-10-04.pdf';
-import ley1007 from '@/assets/pdf/Ley-No.-10-07.pdf';
-import ley1307 from '@/assets/pdf/Ley-No.-13-07.pdf';
-import ley4108 from '@/assets/pdf/Ley-No.-41-08.pdf';
-import ley34006y44906 from '@/assets/pdf/Ley-No.-340-06-y-449-06.pdf';
+import resolucion636797921635056679 from '@/assets/pdf/normativa/normativa_haina/636797921635056679-Resolucin-del-Ayuntamiento-Municipal-Haina.pdf';
+import ayuntamientoBajosHainaOrdenanza12017 from '@/assets/pdf/normativa/normativa_haina/Ayuntamiento de Bajos de Haina - Ordenanza No. 1-2017.pdf';
+import ayuntamientoMunicipalHainaResolución072006 from '@/assets/pdf/normativa/normativa_haina/Ayuntamiento Municipal de Haina - Resolución No. 07-2006.pdf';
+import planMunicipalHaina from '@/assets/pdf/normativa/normativa_haina/Plan Municipal Haina.pdf';
+import congresoNacional1 from '@/assets/pdf/normativa/Congreso Nacional República Dominicana - 1963 - Ley No. 6232 de Planificación Urbana.pdf';
+import congresoNacional2 from '@/assets/pdf/normativa/Congreso Nacional República Dominicana - 2002 - Ley 368-22 de Ordenamiento Territorial, Uso de Suelo y Asentamientos Humanos.pdf';
+import decreto13414 from '@/assets/pdf/normativa/decreto_134-14.pdf';
+import fernandezDado from '@/assets/pdf/normativa/Fernández - DADO en Santo Domingo de Guzmán, Distrito Nacional.pdf';
+import leyHA_DADO from '@/assets/pdf/normativa/Ley - HA DADO LA SIGUIENTE LEY DE PLANIFICACIÓN E INVER.pdf';
+import ley14702 from '@/assets/pdf/normativa/Ley_147-02_Sobre_Gestion_de_Riesgos.pdf';
+import ley17607 from '@/assets/pdf/normativa/Ley_176-07.pdf';
+import ley49606 from '@/assets/pdf/normativa/Ley_496_06_sobre_SEEPYD.pdf';
+import ley55 from '@/assets/pdf/normativa/ley-55-que-crea-el-consejo-nacional-de-desarrollo.pdf';
+import leyEstrategia from '@/assets/pdf/normativa/Ley-estrategia-nacional-de-desarrollo.pdf';
+import ordenanza12021 from '@/assets/pdf/normativa/ordenanza 1-2021.pdf';
+import presidenciaRD from '@/assets/pdf/normativa/Presidencia de la República Dominicana - 2007 - Dec. No. 493-07 que aprueba el Reglamento de Aplic.pdf';
 
 const items = [
   {
-    id: 1,
-    title: "Ley No. 41-08, de función pública y reglamentación",
-    date: "22 January, 2018",
-    size: "1.50MB",
-    pdf: ley4108
+    title: "Resolución del ayuntamiento municipal de Haina",
+    date: "17/12/2018",
+    size: "2MB",
+    pdf: resolucion636797921635056679
   },
   {
-    id: 2,
-    title: "Ley 481-08, general de archivos y reglamentación",
-    date: "22 January, 2018",
-    size: "861.35KB",
-    pdf: ley48108
+    title: "Ayuntamiento de Bajos de Haina Ordenanza No. 1-2017",
+    date: "19/4/2024",
+    size: "1.25MB",
+    pdf: ayuntamientoBajosHainaOrdenanza12017
   },
   {
-    id: 3,
-    title: "Ley No. 10-07, que instituye el sistema nacional de control",
-    date: "22 January, 2018",
-    size: "43.75KB",
-    pdf: ley1007
+    title: "Ayuntamiento Municipal de Haina - Resolución No. 07-2006",
+    date: "19/4/2024",
+    size: "0.3MB",
+    pdf: ayuntamientoMunicipalHainaResolución072006
   },
   {
-    id: 4,
-    title: "Ley No. 13-07, sobre el Tribunal Superior Administrativo",
-    date: "22 January, 2018",
-    size: "81.52KB",
-    pdf: ley1307
+    title: "Plan Municipal Haina",
+    date: "2012",
+    size: "0.6MB",
+    pdf: planMunicipalHaina
   },
   {
-    id: 5,
-    title: "Ley No. 5-07, que crea el sistema integrado de administración",
-    date: "22 January, 2018",
-    size: "816.52KB",
-    pdf: ley507
+    title: "Congreso Nacional República Dominicana - 1963 - Ley No. 6232",
+    date: "26/6/06",
+    size: "37KB",
+    pdf: congresoNacional1
   },
   {
-    id: 6,
-    title: "Ley 498-06, de planificación e inversión pública",
-    date: "22 January, 2018",
-    size: "1.38MB",
-    pdf: ley49806
+    title: "Congreso Nacional República Dominicana - 2002 - Ley 363-22",
+    date: "29/9/23",
+    size: "0.3MB",
+    pdf: congresoNacional2
   },
   {
-    id: 7,
-    title: "Ley No. 340-06 y 449-06, sobre compras y contrataciones de",
-    date: "22 January, 2018",
-    size: "182.85KB",
-    pdf: ley34006y44906
+    title: "Decreto 134-14",
+    date: "31/10/14",
+    size: "12MB",
+    pdf: decreto13414
   },
   {
-    id: 8,
-    title: "Ley 6-06, de crédito público",
-    date: "22 January, 2018",
-    size: "816.47KB",
-    pdf: ley606
+    title: "Fernández DADO en Santo Domingo",
+    date: "15/11/05",
+    size: "71KB",
+    pdf: fernandezDado
   },
   {
-    id: 9,
-    title: "Ley 423-06, orgánica de presupuesto para el sector público",
-    date: "22 January, 2018",
-    size: "1.22MB",
-    pdf: ley42306
+    title: "Ley - HA DADO LA SIGUIENTE LEY",
+    date: "22/5/13",
+    size: "0.2MB",
+    pdf: leyHA_DADO
   },
   {
-    id: 10,
-    title: "Ley 10-04, de la Cámara de Cuentas de la República",
-    date: "22 January, 2018",
-    size: "816.45KB",
-    pdf: ley1004
+    title: "Ley 147-02 Sobre Gestión de Riesgo",
+    date: "26/3/08",
+    size: "78KB",
+    pdf: ley14702
   },
   {
-    id: 11,
-    title: "Ley 567-05, de Tesorería Nacional",
-    date: "22 January, 2018",
-    size: "81.63KB",
-    pdf: ley56705
+    title: "Ley 176-07",
+    date: "21/8/08",
+    size: "8MB",
+    pdf: ley17607
   },
   {
-    id: 12,
-    title: "Ley 126-01, que crea la Dirección General de Contabilidad",
-    date: "22 January, 2018",
-    size: "43.75KB",
-    pdf: ley12601
+    title: "Ley 496-06 sobre SEEPYD",
+    date: "2/1/07",
+    size: "0.1MB",
+    pdf: ley49606
   },
   {
-    id: 13,
-    title: "Ley 200-04, sobre libre acceso a la información pública",
-    date: "22 January, 2018",
-    size: "81.52KB",
-    pdf: ley20004
+    title: "Ley 55-que crea el consejo nacional",
+    date: "10/9/15",
+    size: "0.19MB",
+    pdf: ley55
   },
   {
-    id: 14,
-    title: "Ley No. 82-79, sobre declaración jurada de bienes",
-    date: "22 January, 2018",
-    size: "43.75KB",
-    pdf: ley8279
+    title: "Ley estrategia nacional de desarrollo",
+    date: "19/4/24",
+    size: "1.20MB",
+    pdf: leyEstrategia
+  },
+  {
+    title: "Ordenanza 1-2021",
+    date: "7/5/14",
+    size: "2MB",
+    pdf: ordenanza12021
+  },
+  {
+    title: "Presidencia de la República Dominicana",
+    date: "16/11/09",
+    size: "0.2MB",
+    pdf: presidenciaRD
   }
 ];
 
@@ -158,8 +158,8 @@ export const NormativaScreen = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {filteredItems.map((item) => (
-                    <TableRow key={item.id}>
+                  {filteredItems.map((item, i) => (
+                    <TableRow key={i}>
                       <TableCell>{item.title}</TableCell>
                       <TableCell>{item.date}</TableCell>
                       <TableCell>{item.size}</TableCell>
