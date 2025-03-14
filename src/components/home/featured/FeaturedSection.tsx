@@ -6,7 +6,7 @@ import { News } from "./News";
 export const FeaturedSection = () => {
   return (
     <PageSection>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-30">
         <FeaturedDocuments />
         <CommunityIndicators />
         <News />

@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             <Link to='/'>
-            <div className=" text-white  ">
+            <div className=" text-white p-3 lg:p-0  ">
               <div className="text-2xl font-bold">Bajos de Haina</div>
               <div className="  text-sm">OBSERVATORIO</div>
             </div>

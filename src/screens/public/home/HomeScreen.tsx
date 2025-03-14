@@ -7,10 +7,10 @@ export const HomeScreen = () => {
   return (
     <div>
       <SliderSection />
-      <div className="h-50" />
+      <div className="h-30" />
       <FeaturedSection />
       <WeAreSection />
-      <div className="h-50" />
+      <div className="h-30" />
 
     </div>
   )

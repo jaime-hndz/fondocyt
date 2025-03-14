@@ -19,8 +19,8 @@ export const FeaturedDocuments = () => {
               Destacamos
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {documents.map((doc) => (
-                <a href='https://www.one.gob.do/publicaciones/2024/tu-municipio-en-cifras-bajos-de-haina/'>
+              {documents.map((doc,i) => (
+                <a key={i} href='https://www.one.gob.do/publicaciones/2024/tu-municipio-en-cifras-bajos-de-haina/'>
                 <div 
                   key={doc.id} 
                   className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"

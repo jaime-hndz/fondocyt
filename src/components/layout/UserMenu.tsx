@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 export const UserMenu = () => {
   return (
-    <>
+    <div className="hidden lg:flex">
       <Tooltip title={!usuario ? "Iniciar sesión" : "Usuario"}>
         <Link to={"/user"}>
           <button className="flex flex-col items-center justify-center p-2 text-white hover:bg-white/50  transition-colors duration-200 w-24 h-22">
@@ -14,6 +14,6 @@ export const UserMenu = () => {
           </button>
         </Link>
       </Tooltip>
-    </>
+    </div>
   );
 };
