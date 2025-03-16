@@ -9,7 +9,7 @@ export const LoginScreen = () => {
     <>
     <PageSection>
       <div className="flex gap-30">
-      <div>
+      <div className="hidden lg:inline">
         <img src={img} />
       </div>
       <LoginForm />

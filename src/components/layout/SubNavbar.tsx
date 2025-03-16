@@ -28,7 +28,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
   animate={{ opacity: 1, }} // Estado visible
   exit={{ opacity: 0,   }} // Estado al salir
   transition={{ duration: 0.5, ease: "easeOut" }} // Duración de la animación
-  className="hidden flex pl-10 bg-black/50"
+  className="overflow-x-hide w-screen scroll flex lg:pl-10 bg-black/50"
 >
         {NavItems.map(
           (
@@ -47,8 +47,8 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
                   key={index}
                   className={
                     location.pathname != "/" + item.route
-                      ? "flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-tl-lg rounded-tr-lg transition-colors duration-200 w-40 h-15"
-                      : "flex flex-col items-center justify-center rounded-tl-lg rounded-tr-lg p-2 text-black/50 transition-colors duration-200 w-40 h-15"
+                      ? "flex flex-col items-center justify-center p-2 text-white hover:bg-white/50 rounded-tl-lg rounded-tr-lg transition-colors duration-200  lg:w-40 h-15"
+                      : "flex flex-col items-center justify-center rounded-tl-lg rounded-tr-lg p-2 text-black/50 transition-colors duration-200  w-30 lg:w-40  h-15"
                   }
                   style={
                     location.pathname == "/" + item.route
@@ -57,7 +57,11 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
                   }
                 >
                   {item.icon ? <div>{<item.icon />}</div>: null}
-                  <span className="text-xs text-center w-full">
+                  <span className={
+                    item.icon == null || location.pathname == "/" + item.route
+                    ? " lg:inline text-xs text-center w-full"
+                    : "hidden lg:inline text-xs text-center w-full"
+                    }>
                     {item.title}
                   </span>
                 </button>

@@ -6,12 +6,12 @@ export const HistoriaScreen = () => {
   return (
     <ArticleContainer>
       <Article title="Historia">
-        <div className="flex gap-10">
-          <div className="w-1/3 ">
+        <div className="lg:flex gap-10">
+          <div className="lg:w-1/3 ">
 
           <img src={haina}  />
           </div>
-          <div className="text-xl text-justify flex flex-col gap-5 w-2/3">
+          <div className="text-xl text-justify flex flex-col gap-5 lg:w-2/3">
           <p>
           En Bajos de Haina se produce más del 50% de la electricidad del país,
           también está la única refinería del país. Entre los años 1960 y 1970

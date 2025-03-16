@@ -5,8 +5,8 @@ import { RegisterForm } from "@/components/auth/RegisterForm";
 export const RegisterScreen = () => {
   return (
     <PageSection>
-      <div className="flex gap-20">
-      <div className="w-180">
+      <div className="py-10 flex gap-20">
+      <div className="hidden lg:inline w-180">
         <img src={img} />
       </div>
       <RegisterForm />

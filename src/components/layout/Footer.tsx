@@ -20,16 +20,16 @@ export const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="text-center lg:text-right text-sm ">
+          <div className="text-center lg:text-right text-sm lg:w-md">
             <div className="text-xl font-bold">Bajos de Haina</div>
             <div className="text-sm text-gray-300">San Cristóbal</div>
             <div className="mb-1">República Dominicana</div>
             <div className="text-sm text-blue-400 hidden lg:inline">
               <Link className="hover:text-white transition-colors duration-200" to={"/"}>Inicio </Link>
               {NavItems.map((i, index) => (
-                <div key={index}>
+                <span key={index}>
                   | <Link className="hover:text-white transition-colors duration-200 " to={i.children[0].route}>{i.title}</Link>{" "}
-                </div>
+                </span>
               ))}
             </div>
 

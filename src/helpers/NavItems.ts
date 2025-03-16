@@ -1,6 +1,6 @@
 import { AboutScreen } from "@/screens/public/about/AboutScreen";
 import { BajosHainaScreen } from "@/screens/public/info/BajosHainaScreen";
-import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
+// import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
 import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
 import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
 import { EventosScreen } from "@/screens/public/tools/EventosScreen";
@@ -74,7 +74,6 @@ export const NavItems = [
         icon: LibraryBooks,
         title: "Biblioteca",
         route: "biblioteca",
-        element: BibliotecaScreen
       },
 
     ]
