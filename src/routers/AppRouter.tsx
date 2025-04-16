@@ -17,7 +17,7 @@ import { ReactNode } from "react";
 export const AppRouter: React.FC = () => {
   return (
     <AppContextProvider>
-      <Router basename={import.meta.env.DEV ? "/" : "/fondocyt/"}>
+      <Router basename={'/'}>
         <AppLayout>
           <AnimatedRoutes />
         </AppLayout>

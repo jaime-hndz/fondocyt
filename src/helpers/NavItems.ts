@@ -102,18 +102,22 @@ export const NavItems = [
     title: "Geovisor",
     children: [
       {
+        icon: Terrain,
         title: "Caracterización socioeconómica ",
         route: "geovisor",
       },
       {
+        icon: Terrain,
         title: "Caracterización fisica",
         route: "geovisor2",
       },
       {
+        icon: Terrain,
         title: "Gestión de riesgos",
         route: "geovisor3",
       },
       {
+        icon: Terrain,
         title: "Ordenamiento territorial",
         route: "geovisor4",
       }
