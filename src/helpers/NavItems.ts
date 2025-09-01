@@ -5,6 +5,7 @@ import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
 import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
 import { EventosScreen } from "@/screens/public/tools/EventosScreen";
 import { NormativaScreen } from "@/screens/public/tools/NormativaScreen";
+import { OrdenamientoTerritorialScreen } from "@/screens/public/tools/OrdenamientoTerritorialScreen";
 import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
 // import { ContactoScreen } from "@/screens/public/tools/ContactoScreen";
 // import { EventosScreen } from "@/screens/public/tools/EventosScreen";
@@ -86,6 +87,7 @@ export const NavItems = [
         icon: Terrain,
         title: "Ordenamiento Territorial",
         route: "ordenamiento_territorial",
+        element: OrdenamientoTerritorialScreen
           
       },
       {
