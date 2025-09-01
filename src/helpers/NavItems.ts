@@ -3,7 +3,10 @@ import { BajosHainaScreen } from "@/screens/public/info/BajosHainaScreen";
 // import { BibliotecaScreen } from "@/screens/public/info/BibliotecaScreen";
 import { HistoriaScreen } from "@/screens/public/info/HistoriaScreen";
 import { ServiciosScreen } from "@/screens/public/info/ServiciosScreen";
+import { CaracterizacionFisicaScreen } from "@/screens/public/tools/CaracterizacionFisicaScreen";
 import { EventosScreen } from "@/screens/public/tools/EventosScreen";
+import { GeovisorScreen } from "@/screens/public/tools/GeovisorScreen";
+import { GestionRiesgosScreen } from "@/screens/public/tools/GestionRiesgosScreen";
 import { NormativaScreen } from "@/screens/public/tools/NormativaScreen";
 import { OrdenamientoTerritorialScreen } from "@/screens/public/tools/OrdenamientoTerritorialScreen";
 import { ParticipacionCiudadanaScreen } from "@/screens/public/tools/ParticipacionCiudadanaScreen";
@@ -107,21 +110,25 @@ export const NavItems = [
         icon: Terrain,
         title: "Caracterización socioeconómica ",
         route: "geovisor",
+        element: GeovisorScreen
       },
       {
         icon: Terrain,
         title: "Caracterización fisica",
         route: "geovisor2",
+        element: CaracterizacionFisicaScreen
       },
       {
         icon: Terrain,
         title: "Gestión de riesgos",
         route: "geovisor3",
+        element: GestionRiesgosScreen
       },
       {
         icon: Terrain,
         title: "Ordenamiento territorial",
         route: "geovisor4",
+        element: OrdenamientoTerritorialScreen
       }
     ]
   },
