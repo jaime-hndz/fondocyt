@@ -28,7 +28,7 @@ export const SubNavbar: React.FC<Props> = ({ NavItems }) => {
   animate={{ opacity: 1, }} // Estado visible
   exit={{ opacity: 0,   }} // Estado al salir
   transition={{ duration: 0.5, ease: "easeOut" }} // Duración de la animación
-  className="overflow-x-hide w-screen scroll flex lg:pl-10 bg-black/50"
+  className="overflow-x-hide w-full scroll flex lg:pl-10 bg-black/50"
 >
         {NavItems.map(
           (
