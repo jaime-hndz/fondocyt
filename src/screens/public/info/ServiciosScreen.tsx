@@ -9,11 +9,9 @@ export const ServiciosScreen = () => {
         <div className="text-blue-500 underline ">
           <ul className="flex flex-col gap-5">
             <li><Link to={'/geovisor'} >Geovisor</Link></li>
-            <li><Link  to={'/geovisro'}>Mapea tu barrio</Link></li>
-            <li><Link  to={'/geovisro'}>Reporta</Link></li>
-            <li><a href="https://ayuntamientohaina.gob.do/category/servicios/">Servicios: Ayuntamiento Haina </a></li>
-
-
+            <li><a href="https://mapeomibarriord-arcoiris.hub.arcgis.com/">Mapea tu barrio </a></li>
+            <li><a href="https://experience.arcgis.com/experience/a76018c1b51e44f3b35ebc8a01b13eb2">Reporta </a></li>
+            <li><a href="https://ayuntamientohaina.gob.do/">Servicios: Ayuntamiento Haina </a></li>
           </ul>
         </div>
       </Article>
