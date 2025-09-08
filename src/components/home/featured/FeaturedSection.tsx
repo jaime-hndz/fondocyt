@@ -1,7 +1,7 @@
 import { PageSection } from "../../layout/PageSection";
 import { CommunityIndicators } from "./CommunityIndicators";
 import { FeaturedDocuments } from "./FeaturedDocuments";
-import { News } from "./News";
+//import { News } from "./News";
 
 export const FeaturedSection = () => {
   return (
@@ -9,7 +9,7 @@ export const FeaturedSection = () => {
       <div className="flex flex-col gap-30">
         <FeaturedDocuments />
         <CommunityIndicators />
-        <News />
+        {/* <News /> */}
       </div>
     </PageSection>
   );

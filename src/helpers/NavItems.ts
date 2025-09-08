@@ -25,17 +25,16 @@ import {
   Map,
   Terrain,
   Info,
-  NotificationImportant,
+  //NotificationImportant,
   Gavel,
   MedicalInformation,
   People,
-  HomeWork,
+  //  HomeWork,
   Event,
-  AddModerator,
-  ContactSupport,
+  //  AddModerator,
+  // ContactSupport,
   LocalLibrary,
-  LibraryBooks
-  
+  //LibraryBooks
 } from "@mui/icons-material";
 
 export const NavItems = [
@@ -74,11 +73,11 @@ export const NavItems = [
         route: "servicios",
         element: ServiciosScreen
       },
-      {
-        icon: LibraryBooks,
-        title: "Biblioteca",
-        route: "biblioteca",
-      },
+      // {
+      //   icon: LibraryBooks,
+      //   title: "Biblioteca",
+      //   route: "biblioteca",
+      // },
 
     ]
   },
@@ -132,19 +131,17 @@ export const NavItems = [
       }
     ]
   },
-
-
-  {
-    icon: NotificationImportant,
-    title: "Riesgos",
-    children: [
-      {
-        icon: NotificationImportant,
-        title: "Gestión de Riesgos",
-        route: "gestion_riesgos",
-      },
-    ]
-  },
+  // {
+  //   icon: NotificationImportant,
+  //   title: "Riesgos",
+  //   children: [
+  //     {
+  //       icon: NotificationImportant,
+  //       title: "Gestión de Riesgos",
+  //       route: "gestion_riesgos",
+  //     },
+  //   ]
+  // },
   {
     icon: People,
     title: "Participación ",
@@ -156,11 +153,11 @@ export const NavItems = [
         element: ParticipacionCiudadanaScreen
 
       },
-      {
-        icon: HomeWork,
-        title: "Participación Comunitaria",
-        route: "participacion_comunitaria",
-      },
+      // {
+      //   icon: HomeWork,
+      //   title: "Participación Comunitaria",
+      //   route: "participacion_comunitaria",
+      // },
       {
         icon: Event,
         title: "Eventos",
@@ -170,26 +167,26 @@ export const NavItems = [
     ]
   },
 
-  {
-    icon: AddModerator,
-    title: "Transparencia",
-    children: [
-      {
-        icon: AddModerator,
-        title: "Transparencia",
-        route: "transparencia",
-      },
-    ]
-  },
-  {
-    icon: ContactSupport,
-    title: "Contacto",
-    children: [
-      {
-        icon: ContactSupport,
-        title: "Contacto",
-        route: "contacto",
-      },
-    ]
-  },
+  // {
+  //   icon: AddModerator,
+  //   title: "Transparencia",
+  //   children: [
+  //     {
+  //       icon: AddModerator,
+  //       title: "Transparencia",
+  //       route: "transparencia",
+  //     },
+  //   ]
+  // },
+  // {
+  //   icon: ContactSupport,
+  //   title: "Contacto",
+  //   children: [
+  //     {
+  //       icon: ContactSupport,
+  //       title: "Contacto",
+  //       route: "contacto",
+  //     },
+  //   ]
+  // },
 ];
